@@ -232,11 +232,11 @@ table th {
 
 /* Style for alternating row colors */
 table tbody tr:nth-child(odd) {
-    background-color: #d6d6d6; /* Light blue for odd rows */
+    background-color: #d6d6d6; /* Light white for odd rows */
 }
 
 table tbody tr:nth-child(even) {
-    background-color: #9c843c; /* White for even rows */
+    background-color: #9c843c; /* Gold for even rows */
 }
 
 
