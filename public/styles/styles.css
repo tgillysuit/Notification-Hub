@@ -1,0 +1,242 @@
+html {
+    background-color: #6c1fe5;
+    padding: 15px;
+    box-sizing: border-box; /* Ensures consistent box sizing */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2d2588;
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+    color: #d6d6d6;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+#h3MainSignup {
+    text-decoration: none;
+}
+
+a {
+    color: #9c843c;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #009af9;
+}
+
+#mainLogo {
+    width: 25%;
+    display: block;
+    margin: 20px auto;
+}
+
+#logo {
+    width: 120px;
+}
+
+/* Navigation Bar Styles */
+.navbar ul {
+    display: flex;
+    flex-direction: column; /* Default: Stack vertically for mobile */
+    align-items: center;
+    list-style-type: none;
+    background-color: #6c1fe5;
+    padding: 10px 0;
+    margin: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+}
+
+.navbar li {
+    margin: 10px 0;
+}
+
+.navbar a {
+    color: #d6d6d6;
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    display: block;
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+.navbar a:hover {
+    background-color: #2d2588;
+    color: #9c843c;
+}
+
+/* Responsive Navigation for Desktop */
+@media (min-width: 768px) {
+    .navbar ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .navbar li {
+        margin: 0 15px;
+    }
+}
+
+/* Main Content Styling */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 30vh;
+}
+
+/* Sign-up Form */
+#signupForm {
+    background-color: #6c1fe5; /* Add background color for form */
+    padding: 20px;
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    color: #d6d6d6;
+    width: 100%;
+    max-width: 400px; /* Limit width for better appearance */
+    margin: 20px auto;
+}
+
+#jtgp {
+    padding-bottom: 15px;
+}
+
+/* Ensure labels are block elements so they appear above inputs */
+form label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #d6d6d6;
+}
+
+/* Style all input fields */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="tel"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: #fff; /* White background for inputs */
+}
+
+/* Style checkboxes separately */
+form input[type="checkbox"] {
+    width: auto;
+    margin: 0 5px 15px 0; /* Adjust spacing around the checkbox */
+}
+
+/* Styling for the submit button */
+form button[type="submit"] {
+    background-color: #2d2588;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px; /* Add space between form and button */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth hover effect */
+}
+
+form button[type="submit"]:hover {
+    background-color: #9c843c;
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #mainLogo {
+        width: 20%; /* Scale down the logo for smaller screens */
+        margin-bottom: 10px;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.25rem; /* Reduce font size for better fit */
+        margin-bottom: 10px;
+    }
+
+    .navbar ul {
+        padding: 10px;
+        width: 300px;
+    }
+
+    .navbar li {
+        margin: 5px 0; /* Reduce vertical spacing */
+    }
+
+    .navbar a {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+
+    #signupForm {
+        padding: 15px; /* Reduce padding for smaller screens */
+        box-shadow: none; /* Simplify for mobile */
+    }
+
+    form input {
+        font-size: 0.9rem;
+        padding: 20px;
+    }
+
+    form button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+
+.error-message {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: red;
+}
+
+table {
+    width: 300px;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    text-align: left;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table th {
+    background-color: #6c1fe5;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Style for alternating row colors */
+table tbody tr:nth-child(odd) {
+    background-color: #d6d6d6; /* Light blue for odd rows */
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #9c843c; /* White for even rows */
+}
+
+

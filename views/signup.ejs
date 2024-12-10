@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/gilly-favicon.ico">
+    <script src="/scripts/sms-opt-in.js"></script>
+    <script src="/scripts/validation.js" defer></script>
+    <title>Join The Gillypad!</title>
+</head>
+<body>
+    <img id="logo" src="/images/gillysuit-logo.png" alt="Gillysuit's Logo">
+    <h1 id="jtgp">JOIN THE GILLYPAD</h1>
+    <div id="nav-select">
+        <nav id="home-nav" class="navbar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/signup">Sign-up</a></li>
+                <li><a href="/socials">Socials</a></li>
+                <li><a href="/shop">Shop</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <br><br>
+
+    <div id="signupForm">
+        <form action="/signup" method="post">
+            <label for="fname">First Name:</label>
+            <input type="text" name="firstName" id="fname" required>
+        
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lastName" id="lname" required>
+        
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+        
+            <label for="cnf-email">Confirm Email:</label>
+            <input type="email" name="confirmEmail" id="cnf-email" required>
+        
+            <label for="psw">Password:</label>
+            <input type="password" name="password" id="psw" required>
+        
+            <label for="cnf-psw">Confirm Password:</label>
+            <input type="password" name="confirmPassword" id="cnf-psw" required>
+        
+            <!-- Option to Opt-in to SMS Text Messages -->
+            <div id="optInSmsForm" class="smsForm">
+                <label>
+                    <input type="checkbox" id="sms-opt-in-cb"> Would you like to receive SMS text messages?
+                </label>
+                <div id="smsForm" class="smsForm" style="display: none;">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter Phone Number">
+        
+                    <label for="confirmPhoneNumber">Confirm Phone Number:</label>
+                    <input type="tel" id="confirmPhoneNumber" name="confirmPhoneNumber" placeholder="Confirm Phone Number">
+        
+                    <label>
+                        <input type="checkbox" id="dataUsageCheckbox" name="confirmedSmsUsage"> I agree to receive text messages and data usage rates may apply.
+                    </label>
+                </div>
+            </div>
+        
+            <button type="submit">Sign Up</button>
+        </form>        
+    </div>
+</body>
+</html>
