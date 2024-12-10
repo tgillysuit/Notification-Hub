@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 const pool = mariadb.createPool({
   host: process.env.DB_HOST || 'localhost',
   user: process.env.DB_USER || 'root',
-  password: process.env.DB_PASSWORD || '1695', // Change the password here for your local machine
+  password: process.env.DB_PASSWORD || '1234', // Change the password here for your local machine
   database: process.env.DB_NAME || 'thegillypad',
   connectionLimit: 5
 });
